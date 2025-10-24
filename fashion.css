@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.js h2 {
+  font-weight: 300;
+}
+.js .bg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+}
+.js .bg button {
+  padding: 1em;
+  width: 100%;
+}
+.js .bg button:active {
+  scale: 0.95;
+}
+.js .bg .one {
+  background-color: white;
+}
+.js .bg .two {
+  background-color: plum;
+}
+.js .bg .three {
+  background-color: rgb(179, 233, 255);
+}
+.js .bg .four {
+  background-color: wheat;
+}
+.js .bg .five {
+  background-color: rgb(192, 255, 204);
+}
+.js .bg .six {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.view1 {
+  padding: 1.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.view1 .box1 {
+  width: 100%;
+}
+.view1 .box1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 1em;
+}
+.view1 .box1 .minibox {
+  display: flex;
+  justify-content: space-between;
+}
+.view1 .box1 .minibox p {
+  text-transform: uppercase;
+  padding-top: 1em;
+  opacity: 70%;
+  font-size: small;
+}
+
+.view2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.view2 .box2 img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.view2 .minibox2 h1 {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-top: 0.3em;
+  letter-spacing: 0.05em;
+}
+.view2 .minibox2 p {
+  font-size: 20px;
+  padding-top: 1em;
+  opacity: 80%;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.view2 .order {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+.view2 .order p {
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: 300;
+  opacity: 90%;
+}
+
+.view3 {
+  width: 100%;
+  padding: 1.6em;
+  display: flex;
+  flex-direction: column;
+}
+.view3 img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view3 .special {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view3 .special .one {
+  justify-content: start;
+  padding-top: 2em;
+  width: 1cm;
+}
+.view3 .special .one p {
+  writing-mode: vertical-lr;
+  font-size: 18px;
+  opacity: 90%;
+  font-family: "Times New Roman", Times, serif;
+}
+.view3 .special .two {
+  justify-content: end;
+  padding-left: 3em;
+  margin-top: -2.4cm;
+}
+.view3 .special .two h1 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 80;
+  line-height: 0.9;
+  opacity: 80%;
+  text-transform: uppercase;
+}
+.view3 .special .two p {
+  font-size: 20px;
+  opacity: 60%;
+  padding-top: 1em;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 3em;
+  }
+  .view2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 2em;
+  }
+  .view2 .box2 {
+    padding-left: 1em;
+  }
+  .view2 .box2 img {
+    aspect-ratio: 8/9;
+  }
+  .midbox {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+  }
+  .midbox .minibox2 h1 {
+    padding-top: 0.5em;
+    font-size: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+  }
+  .midbox .minibox2 .order {
+    margin-top: auto;
+  }
+  .view3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .view3 .image {
+    width: 40%;
+  }
+  .view3 .image img {
+    aspect-ratio: 6/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .view3 .special {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 7em;
+  }
+  .view3 .special .one {
+    padding-top: 0%;
+  }
+  .view3 .special .two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .view3 .special .two h1 {
+    font-size: 90px;
+    width: 80%;
+    line-height: 1;
+  }
+  .view3 .special .two p {
+    width: 80%;
+    font-size: 20px;
+    word-spacing: 0.3cm;
+  }
+}/*# sourceMappingURL=fashion.css.map */
